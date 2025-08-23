@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Trophy, Star, BookOpen, Users, Target, Clock } from 'lucide-react';
 
 const LandingPage = () => {
@@ -21,12 +22,12 @@ const LandingPage = () => {
                 <a href="#features" className="text-gray-600 hover:text-quest-blue transition-colors">Características</a>
                 <a href="#pricing" className="text-gray-600 hover:text-quest-blue transition-colors">Precios</a>
                 <a href="#testimonials" className="text-gray-600 hover:text-quest-blue transition-colors">Testimonios</a>
-                <button className="bg-quest-blue text-white px-4 py-2 rounded-lg hover:bg-quest-blue-dark transition-colors">
+                <Link to="/login" className="bg-quest-blue text-white px-4 py-2 rounded-lg hover:bg-quest-blue-dark transition-colors">
                   Iniciar Sesión
-                </button>
-                <button className="bg-quest-purple text-white px-6 py-2 rounded-lg hover:bg-quest-purple-dark transition-all transform hover:scale-105 font-semibold">
+                </Link>
+                <Link to="/register" className="bg-quest-purple text-white px-6 py-2 rounded-lg hover:bg-quest-purple-dark transition-all transform hover:scale-105 font-semibold">
                   Prueba Gratis
-                </button>
+                </Link>
               </div>
             </div>
             <div className="md:hidden">
@@ -52,12 +53,12 @@ const LandingPage = () => {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 fade-in" style={{animationDelay: '0.4s'}}>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-quest-purple text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-quest-purple-dark transition-all transform hover:scale-105 shadow-lg">
+                  <Link to="/register" className="bg-quest-purple text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-quest-purple-dark transition-all transform hover:scale-105 shadow-lg">
                     🚀 Empezar Aventura
-                  </button>
-                  <button className="border-2 border-quest-blue text-quest-blue px-8 py-4 rounded-xl text-lg font-semibold hover:bg-quest-blue hover:text-white transition-all">
+                  </Link>
+                  <Link to="/login" className="border-2 border-quest-blue text-quest-blue px-8 py-4 rounded-xl text-lg font-semibold hover:bg-quest-blue hover:text-white transition-all">
                     📺 Ver Demo
-                  </button>
+                  </Link>
                 </div>
                 <p className="mt-4 text-sm text-gray-500">
                   ✨ 14 días de prueba gratis • Sin tarjeta de crédito
