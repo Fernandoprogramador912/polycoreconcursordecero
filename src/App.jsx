@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import VocabularyPage from './pages/VocabularyPage';
 import ConversationPage from './pages/ConversationPage';
 import LevelDetectionPage from './pages/LevelDetectionPage';
+import YouTubePage from './pages/YouTubePage';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/vocabulary" element={<VocabularyPage />} />
           <Route path="/conversation" element={<ConversationPage />} />
           <Route path="/level-detection" element={<LevelDetectionPage />} />
+          <Route path="/youtube" element={<YouTubePage />} />
           
           {/* Redirección por defecto */}
           <Route path="*" element={<Navigate to="/" replace />} />
